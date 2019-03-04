@@ -97,10 +97,10 @@ safe, fast, productive.
 Pick three.
 Duct tape.";
 
-        let mut search_result = search(query, contents)
+        let search_result = search(query, contents)
             .iter()
             .map(|line_entry| line_entry.line)
-            .collect::<Vec<&str>>();
+            .collect::<Vec<_>>();
 
         assert_eq!(
             vec!["safe, fast, productive."],
@@ -119,7 +119,7 @@ Trust me.";
         let search_result = search_case_insensitive(query, contents)
             .iter()
             .map(|line_entry| line_entry.line)
-            .collect::<Vec<&str>>();
+            .collect::<Vec<_>>();
 
         assert_eq!(
             vec!["Rust:", "Trust me."],

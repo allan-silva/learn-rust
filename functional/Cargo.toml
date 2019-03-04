@@ -1,0 +1,7 @@
+[package]
+name = "functional"
+version = "0.1.0"
+authors = ["allan.silva <allan.tavares@allantavares.com.br>"]
+edition = "2018"
+
+[dependencies]
